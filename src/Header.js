@@ -1,4 +1,4 @@
-import './Header.css'
+import './Header.css';
 
 function Header() {
   return (
@@ -7,7 +7,7 @@ function Header() {
         Company Fundamental Analysis
       </p>
     </header>
-  );
+  )
 }
 
 export default Header;

@@ -8,7 +8,8 @@ import {
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Header from './Header.js';
-import Menu from './Menu';
+import Menu from './Menu.js';
+import Home from './Home.js';
 import DataTable from './DataTable.js';
 
 
@@ -32,12 +33,13 @@ class App extends Component {
               handleSelectStock={this.handleSelectStock}>
             </Menu>
             <Switch>
+              <Route exact path='/' component={Home} />
               <Route path='/:id' component={DataTable} />
             </Switch>
           </div>
         </div>
       </Router>
-    );
+    )
   }
 }
 

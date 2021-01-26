@@ -41,7 +41,7 @@ class Menu extends Component {
           <hr />
         </div>
       </div>
-    );
+    )
   }
 }
 

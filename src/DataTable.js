@@ -6,7 +6,6 @@ class DataTable extends Component {
   constructor(props) {
     super(props)
     this.rowName = [
-      "",
       "Market Cap (k)",
       "Number of Shares (k)",
       "Windage Growth Rate",
@@ -65,7 +64,7 @@ class DataTable extends Component {
           </tbody>
         </Table>
       </div>
-    );
+    )
   }
 }
 
