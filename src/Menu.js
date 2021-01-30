@@ -8,7 +8,7 @@ import "./Menu.css";
 class Menu extends Component {
   constructor(props) {
     super(props)
-    this.stocks = ["AAPL", "FB", "PINS", "BAC", "BABA", "KO", "GOOL", "TWTR", "ADBE", "AMZN", "DIS", "GPRO"]
+    this.stocks = ["AAPL", "FB", "PINS", "BAC", "BABA", "KO", "GOOG", "TWTR", "ADBE", "AMZN", "DIS", "GPRO"]
   }
 
   handleSelectStock = (stock) => {
@@ -16,7 +16,7 @@ class Menu extends Component {
   }
 
   handleSearch = (e) => {
-    if (e.keyCode == 13) {
+    if (e.keyCode === 13) {
       this.props.history.push("/" + e.target.value);
     }
   }
