@@ -58,11 +58,9 @@ class DataTable extends Component {
     this.rowEles = this.rowNames.map((name) =>
       <tr key={name}>
         <td> {name} </td>
-        <td> 1 </td>
-        <td> 2 </td>
-        {/* {this.state.table[name].map((ele) =>
+        {this.state.table[name].map((ele) =>
           <td> {this.format(ele)} </td>
-        )} */}
+        )}
       </tr>
     )
 
