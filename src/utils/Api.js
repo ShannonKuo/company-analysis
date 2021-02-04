@@ -54,4 +54,10 @@ export default class Api {
     tmpParams.params.limit = this.params.params.limit
     return this.init().get("/ratios/" + stock, tmpParams)
   }
+
+  getFinancialGrowth(stock) {
+    let tmpParams = this.params
+    tmpParams.params.limit = this.params.params.limit + 9
+    return this.init().get("/financial-growth/" + stock, tmpParams)
+  }
 }
